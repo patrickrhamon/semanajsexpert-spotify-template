@@ -7,9 +7,9 @@
   "scripts": {
     "start": "node server/index.js",
     "live-reload": "nodemon server/index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest --no-cache",
-    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest --no-cache --watchAll",
-    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest --no-cache --coverage tests/unit"
+    "test": "set LOG_DISABLED=true && set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand --no-cache",
+    "test:watch": "set LOG_DISABLED=true && set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand --no-cache --watchAll",
+    "test:coverage": "set LOG_DISABLED=true && set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand --no-cache --coverage tests/unit"
   },
   "repository": {
     "type": "git",
