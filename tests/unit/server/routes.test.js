@@ -12,7 +12,7 @@ const {
     }
 } = config
 
-describe('#Routes - test site for APPI response', () => {
+describe('#Routes - test site for API response', () => {
     beforeEach(() => {
         jest.restoreAllMocks()
         jest.clearAllMocks()

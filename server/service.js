@@ -11,7 +11,7 @@ const {
 } = config
 
 export class Service {
-    createFileStram(filename) {
+    createFileStream(filename) {
         return fs.createReadStream(filename)
     }
 
@@ -37,7 +37,7 @@ export class Service {
         } = await this.getFileInfo(file)
 
         return {
-            stream: this.createFileStram(name),
+            stream: this.createFileStream(name),
             type
         }
     }
